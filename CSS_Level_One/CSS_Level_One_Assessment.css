@@ -1,0 +1,27 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    color: blueviolet;
+    border: 5px solid black;
+}
+
+span{
+    color: blueviolet;
+}
+
+.temp{
+    background-color: blue;
+    border: 5px dotted ;
+    width: 800px;
+    height: 400px;
+}
+
+#num{
+    background-color: white;
+}
+
+#value{
+    border: 2px purple solid;
+}

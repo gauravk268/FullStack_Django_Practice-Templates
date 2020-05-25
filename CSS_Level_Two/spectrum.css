@@ -1,0 +1,35 @@
+p{
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+
+td{
+    height: 200px;
+    width: 150px;
+    border: 6px solid white;
+}
+
+.art{
+    margin: auto;
+}
+
+#first{
+    background-color: #264653;
+}
+
+#second{
+    background-color: #2A9D8F;
+}
+
+#third{
+    background-color: #E9C46A;
+}
+
+#fourth{
+    background-color: #F4A261;
+}
+
+#fifth{
+    background-color: #E76F51;
+}

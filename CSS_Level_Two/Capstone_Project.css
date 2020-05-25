@@ -1,0 +1,29 @@
+body{
+    color: white;
+    background-color: #011627;
+    border: 40px solid #118AB2;
+    border-top: 0px;
+    
+    text-align: center;
+    margin: 0em;
+    border-top: 0em;
+}
+
+p{
+    padding: 5% 20% 0% 20%;
+}
+
+form{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#sub{
+    background-color: #FF9F1C;
+    height: 80px;
+    width: fit-content;
+    margin: 4px;
+    margin-top: 12px;
+    font-size: 1.5em;
+    border-radius: 25px;
+}

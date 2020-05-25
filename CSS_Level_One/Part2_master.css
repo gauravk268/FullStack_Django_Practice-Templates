@@ -1,0 +1,20 @@
+body{
+    background:url(https://media.cntraveler.com/photos/59ef91dd8d4f736d51415c2e/master/w_2667,h_2000,c_limit/7MileBeach-2013-HiRes.jpg);
+    background-repeat: no-repeat;
+}
+
+div{
+    background-color: red;
+    border-color: blue;
+    border-width: 5px;
+    border-style: double;
+}
+
+p{
+    color: yellow;
+}
+
+span{
+    background: red;
+    color: black;
+}

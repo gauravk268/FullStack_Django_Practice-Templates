@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Users</title>
+        <!-- <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h1>Please Sign Up Here!</h1>
+        <!-- {% if users %}
+        <ol>
+            {% for person in users %}
+            <li>User Info</li>
+                <ul>
+                    <li>First Name: {{ person.first_name }}</li>
+                    <li>Last Name: {{ person.last_name }}</li>
+                    <li>Email: {{ person.email }}</li>
+                </ul>
+            {% endfor %}
+        </ol>
+        {% endif %} -->
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Please Sign Up Here!</h1>
+                <form method="POST">
+                    {{ form.as_p }}
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </form>
+
+            </div>
+        </div>
+
+    </body>
+</html>

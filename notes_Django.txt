@@ -1,0 +1,12 @@
+Start Project
+    django-admin startproject project_name
+
+Start App
+    python manage.py startapp app_name
+
+Start Server
+    python manage.py runserver
+
+Make Migrations
+    python manage.py migrate
+    python manage.py makemigrations

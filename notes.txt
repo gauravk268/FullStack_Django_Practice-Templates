@@ -1,0 +1,300 @@
+CSS Background Properties
+
+    The background-color property specifies the background color of an element.
+
+        body {
+            background-color: lightblue;
+        }
+
+    The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent.
+        
+        opacity: 0.3;
+
+        background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+
+    The background-image property specifies an image to use as the background of an element.
+
+        background-image: url("paper.gif");
+
+
+    By default, the background-image property repeats an image both horizontally and vertically.
+
+        If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
+
+        background-image: url("gradient_bg.png");
+        background-repeat: repeat-x;  
+
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+
+
+    The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+
+        background-attachment: scroll;
+
+        background: #ffffff url("img_tree.png") no-repeat right top;
+
+        When using the shorthand property the order of the property values is:
+
+            background-color
+            background-image
+            background-repeat
+            background-attachment
+            background-position
+
+    background 	Sets all the background properties in one declaration
+    background-attachment 	Sets whether a background image is fixed or scrolls with the rest of the page
+    background-clip 	Specifies the painting area of the background
+    background-color 	Sets the background color of an element
+    background-image 	Sets the background image for an element
+    background-origin 	Specifies where the background image(s) is/are positioned
+    background-position 	Sets the starting position of a background image
+    background-repeat 	Sets how a background image will be repeated
+    background-size 	Specifies the size of the background image(s)
+
+
+
+CSS Border Properties
+
+    The border-style property specifies what kind of border to display.
+
+    The following values are allowed:
+
+        dotted - Defines a dotted border
+        dashed - Defines a dashed border
+        solid - Defines a solid border
+        double - Defines a double border
+        groove - Defines a 3D grooved border. The effect depends on the border-color value
+        ridge - Defines a 3D ridged border. The effect depends on the border-color value
+        inset - Defines a 3D inset border. The effect depends on the border-color value
+        outset - Defines a 3D outset border. The effect depends on the border-color value
+        none - Defines no border
+        hidden - Defines a hidden border
+
+    The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+
+        Note: None of the OTHER CSS border properties (which you will learn more about in the next chapters) will have ANY effect unless the border-style property is set!
+
+    The border-width property specifies the width of the four borders.
+
+        border-style: solid;
+        border-width: 5px;
+
+        border-width: medium;
+
+    The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border):
+
+        border-style: solid;
+        border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+
+        border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left
+
+    The border-color property is used to set the color of the four borders.
+
+        border-style: solid;
+        border-color: red;
+
+        border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+
+        border-color: #ff0000; /* red */
+
+        border-color: rgb(255, 0, 0); /* red */
+
+        border-color: hsl(0, 100%, 50%); /* red */
+
+    In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):
+
+        border-top-style: dotted;
+        border-right-style: solid;
+        border-bottom-style: dotted;
+        border-left-style: solid;
+
+
+        If the border-style property has four values:
+
+            border-style: dotted solid double dashed;
+                top border is dotted
+                right border is solid
+                bottom border is double
+                left border is dashed
+
+        If the border-style property has three values:
+
+            border-style: dotted solid double;
+                top border is dotted
+                right and left borders are solid
+                bottom border is double
+
+        If the border-style property has two values:
+
+            border-style: dotted solid;
+                top and bottom borders are dotted
+                right and left borders are solid
+
+        If the border-style property has one value:
+
+            border-style: dotted;
+                all four borders are dotted
+
+    The border property is a shorthand property for the following individual border properties:
+
+        border: 5px solid red;
+
+        border-left: 6px solid red;
+        background-color: lightgrey; 
+
+        border-bottom: 6px solid red;
+        background-color: lightgrey;
+
+    The border-radius property is used to add rounded borders to an element:
+
+        border: 2px solid red;
+        border-radius: 5px;
+
+    All CSS Border Properties
+    Property 	Description
+    border 	Sets all the border properties in one declaration
+    border-bottom 	Sets all the bottom border properties in one declaration
+    border-bottom-color 	Sets the color of the bottom border
+    border-bottom-style 	Sets the style of the bottom border
+    border-bottom-width 	Sets the width of the bottom border
+    border-color 	Sets the color of the four borders
+    border-left 	Sets all the left border properties in one declaration
+    border-left-color 	Sets the color of the left border
+    border-left-style 	Sets the style of the left border
+    border-left-width 	Sets the width of the left border
+    border-radius 	Sets all the four border-*-radius properties for rounded corners
+    border-right 	Sets all the right border properties in one declaration
+    border-right-color 	Sets the color of the right border
+    border-right-style 	Sets the style of the right border
+    border-right-width 	Sets the width of the right border
+    border-style 	Sets the style of the four borders
+    border-top 	Sets all the top border properties in one declaration
+    border-top-color 	Sets the color of the top border
+    border-top-style 	Sets the style of the top border
+    border-top-width 	Sets the width of the top border
+    border-width 	Sets the width of the four borders
+
+
+
+CSS Margins
+
+    The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+    CSS has properties for specifying the margin for each side of an element:
+
+        margin-top
+        margin-right
+        margin-bottom
+        margin-left
+
+    All the margin properties can have the following values:
+
+        auto - the browser calculates the margin
+        length - specifies a margin in px, pt, cm, etc.
+        % - specifies a margin in % of the width of the containing element
+        inherit - specifies that the margin should be inherited from the parent element
+
+    Tip: Negative values are allowed.
+
+    If the margin property has four values:
+
+        margin: 25px 50px 75px 100px;
+            top margin is 25px
+            right margin is 50px
+            bottom margin is 75px
+            left margin is 100px
+
+        margin: 25px 50px 75px 100px;
+
+    All CSS Margin Properties
+
+    margin 	A shorthand property for setting the margin properties in one declaration
+    margin-bottom 	Sets the bottom margin of an element
+    margin-left 	Sets the left margin of an element
+    margin-right 	Sets the right margin of an element
+    margin-top 	Sets the top margin of an element
+
+
+
+CSS Padding
+
+    All CSS Padding Properties
+    Property 	Description
+    padding 	A shorthand property for setting all the padding properties in one declaration
+    padding-bottom 	Sets the bottom padding of an element
+    padding-left 	Sets the left padding of an element
+    padding-right 	Sets the right padding of an element
+    padding-top 	Sets the top padding of an element
+
+
+
+CSS Height and Width
+
+    All CSS Dimension Properties
+    Property 	Description
+    height 	Sets the height of an element
+    max-height 	Sets the maximum height of an element
+    max-width 	Sets the maximum width of an element
+    min-height 	Sets the minimum height of an element
+    min-width 	Sets the minimum width of an element
+    width 	Sets the width of an element
+
+
+
+CSS Box Model
+
+    All CSS Outline Properties
+    Property 	Description
+    outline 	A shorthand property for setting outline-width, outline-style, and outline-color in one declaration
+    outline-color 	Sets the color of an outline
+    outline-offset 	Specifies the space between an outline and the edge or border of an element
+    outline-style 	Sets the style of an outline
+    outline-width 	Sets the width of an outline
+
+
+
+CSS Text
+
+    All CSS Text Properties
+    Property 	Description
+    color 	Sets the color of text
+    direction 	Specifies the text direction/writing direction
+    letter-spacing 	Increases or decreases the space between characters in a text
+    line-height 	Sets the line height
+    text-align 	Specifies the horizontal alignment of text
+    text-decoration 	Specifies the decoration added to text
+    text-indent 	Specifies the indentation of the first line in a text-block
+    text-shadow 	Specifies the shadow effect added to text
+    text-transform 	Controls the capitalization of text
+    text-overflow 	Specifies how overflowed content that is not displayed should be signaled to the user
+    unicode-bidi 	Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document
+    vertical-align 	Sets the vertical alignment of an element
+    white-space 	Specifies how white-space inside an element is handled
+    word-spacing 	Increases or decreases the space between words in a text
+
+
+
+CSS Fonts
+
+    All CSS Font Properties
+    Property 	Description
+    font 	Sets all the font properties in one declaration
+    font-family 	Specifies the font family for text
+    font-size 	Specifies the font size of text
+    font-style 	Specifies the font style for text
+    font-variant 	Specifies whether or not a text should be displayed in a small-caps font
+    font-weight 	Specifies the weight of a font
+
+
+
+
