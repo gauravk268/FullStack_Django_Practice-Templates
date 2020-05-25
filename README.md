@@ -1,2 +1,2 @@
 # Django_Practice-Templates
-Django Practice files and Templates
+FullStack with Django, Practice files and Templates
